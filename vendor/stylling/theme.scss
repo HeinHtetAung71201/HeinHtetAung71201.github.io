@@ -1,0 +1,12 @@
+$theme-colors:(
+    'primary': #6156F9,
+    'secondary':#7E76F9,
+    'danger':#ff0000,
+    'warning':#7e76f93d,
+    
+);
+$input-btn-padding-x: 27px;
+$color-contrast-light: white;
+$border-radius:28px;
+
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';

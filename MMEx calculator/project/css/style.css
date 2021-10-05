@@ -1,0 +1,139 @@
+:root{
+    --primary: #2CD1EE;
+    --secondary:#707070;
+    --light:#ffffff;
+    --dark:#000000;
+    --headerfont:38px;
+    --radius:5px;
+    --btncolor:#2cd1eeb6;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    color: var(--secondary);
+}
+.container{
+    width: 700px;
+    margin: 128px auto;
+}
+.header{
+    /*width: 500px; */
+    /* height: 100px; */
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    /* background: red; */
+    padding: 4px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: var(--headerfont);
+    /* padding: 10px; */
+}
+#lgo{
+    width: 65px;
+}
+#name{
+    margin-left: 9px;
+    font-size: 50px;
+    font-weight: bolder;
+}
+.result{
+    font-size: 50px;
+   
+}
+.line{
+    width: 700px;
+    height: 10px;
+    background: var(--secondary);
+}
+.inputvalues{
+    display: flex;
+    justify-content: space-between;
+    /* padding: 10px; */
+    margin-top: 10px;
+}
+#calculateBtn{
+    width: 97px;
+    height: 59px;
+    /* border: 3px solid var(--secondary); */
+    background: var(--primary);
+    border-radius: var(--radius);
+    font-size: 1em;
+}
+#clear{
+    width: 97px;
+    height: 59px;
+    /* border: 3px solid var(--secondary); */
+    background: var(--primary);
+    border-radius: var(--radius);
+    font-size: 1em;
+}
+
+#calculateBtn:active{
+    background-color: var(--btncolor);
+}
+#box{
+    width: 124px;
+    height: 26px;
+    /* margin-top: 7px; */
+    border-radius: var(--radius);
+    /* padding: 2px; */
+    appearance: none;
+    /* padding: 7px 7px; */
+    padding-left: 19px;
+    padding-right: 10px;
+}
+#box:focus-visible{
+    outline:none;
+}
+.inputB{
+    text-align: right;
+}
+
+.history{
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+    /* border: 2px solid black; */
+}
+thead th{
+    background: var(--primary);
+    height: 50px;
+    border-radius: var(--radius);
+    /* width: 173px; */
+}
+.history tr:nth-child(even){background-color: #f2f2f2;}
+.history tr:hover {background-color: #ddd;};
+#rowSpacer{
+    height: 209px;
+    background: #7070702e;
+    width: 100%;
+}
+.dark{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 50px;
+    right:50px;
+    align-items: center;
+    border: 2px solid;
+}
