@@ -315,6 +315,7 @@ nav button:focus{
       from { width: 0 }
       to { width: 75%; }
     }
+
     
     /* The typewriter cursor effect */
     @keyframes blink-caret {
@@ -365,6 +366,17 @@ nav button:focus{
     
              }
     }
+    .imghvr-shutter-in-vert:hover figcaption p,h3{
+      display: none !important;
+      }
+      
     }
     .nav-link.createline{
       border-bottom: 2px solid;}
+
+      figcaption{
+        font-size: 16px !important;
+      }
+      figcaption h3{
+        font-size: 21px !important;
+      }
