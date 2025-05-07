@@ -1,0 +1,51 @@
+@media screen and (max-width: 480px) {
+   .container{
+       width: 97%;
+       margin: 34px auto;
+   }
+   .header{
+    flex-flow: column;
+   }
+   .logo{
+       width: 100%;
+   }
+   .result{
+    width: 100%;
+    /* text-align: left; */
+    /* text-align: left; */
+    /* position: relative; */
+    display: flex;
+    justify-content: flex-end;
+   }
+   .line{
+       width: 100%;
+   }
+   .inputvalues{
+       flex-wrap: wrap;
+       justify-content: none;
+       padding: none;
+
+   }
+   .input{
+       width: 100%;
+       margin-bottom: 7%;
+   }
+   #box{
+       width:100%;
+       height:50%;
+   }
+   .from{
+       width: 40%;
+       margin-bottom: 7%;
+
+   }
+   .to{
+        width: 40%;
+        margin-left: 20%;
+        margin-bottom: 7%;
+   }
+   .history{
+       margin-top: 7%;
+   }
+
+}

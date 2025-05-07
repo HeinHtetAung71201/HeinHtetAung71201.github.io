@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Primary Meta Tags -->
+<title>MMEx Currency Exchange Calculator app</title>
+<meta name="title" content="MMEx Currency Exchange Calculator app">
+<meta name="description" content="For the purpose of the exchange currency and then to save out valuable  time into the world">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https:">
+<meta property="og:title" content="MMEx Currency Exchange Calculator app">
+<meta property="og:description" content="For the purpose of the exchange currency and then to save out valuable  time into the world">
+<meta property="og:image" content="img/logo.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https:">
+<meta property="twitter:title" content="MMEx Currency Exchange Calculator app">
+<meta property="twitter:description" content="For the purpose of the exchange currency and then to save out valuable  time into the world">
+<meta property="twitter:image" content="img/logo.png">
+
+    <title>MMEx Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/darkmode.css">
+    <link rel="stylesheet" href="css/mediaquery.css">
+    <link rel="stylesheet" href="vendor/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+             <img id="lgo"src="img/logo.png" alt="">
+            <span id="name">
+                MMEx
+            </span>
+            </div>
+            <div class="result">
+                0.00
+            </div>
+     
+         </div>
+         <div class="line"></div>
+         <form class="inputvalues">
+             <div class="input">
+                 <label  for="">Input</label> <br>
+                 <input type="number" id="box"class="inputB" autofocus min="1" placeholder="0.00" required>
+             </div>
+             <div class="from">
+                <label for="">From</label> <br>
+                <select name=""id="box" class="fromOpt" required>
+                    <option value="" selected id="default">Select Currency</option>
+                </select>
+             </div>
+             <div class="to">
+                <label for="">To
+                </label> <br>
+               <select name="" id="box" class="toOpt" required>
+                <option value="" selected id="default" >Select Currency</option>
+               </select>
+             </div>
+             <div class="calculation">
+                 <button id="calculateBtn" type="submit">Calculate</button>
+             </div>
+             <div class="calculation">
+                <button id="clear" class="clear" type="reset"  type="reset">Clear all</button>
+            </div>
+            </form>
+            <div class="hisContainer">
+                <table class="history">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>From</th>
+                            <th>To</th>
+                            <th>Results</th>
+                        </tr>
+                    </thead>
+                    <tbody class="historyList">
+                       
+                    </tbody>
+                    
+                </table>
+            </div>
+    </div>
+    <div class="dark" onclick="changemode()">
+        <i class="fas fa-adjust"></i>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
